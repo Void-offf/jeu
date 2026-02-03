@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>🎮 Sites de Jeux</title>
+    <title>🎮 Hub de Jeux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icônes modernes -->
@@ -16,114 +16,132 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: white;
             min-height: 100vh;
         }
 
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 40px 20px 20px;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.4em;
             margin: 0;
         }
 
         header p {
-            opacity: 0.9;
             margin-top: 10px;
+            opacity: 0.85;
         }
 
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            padding: 30px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1000px;
             margin: auto;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(12px);
-            border-radius: 20px;
-            padding: 30px 20px;
             text-align: center;
             cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.25s ease;
         }
 
         .card:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transform: translateY(-8px) scale(1.05);
         }
 
-        .material-icons {
-            font-size: 55px;
-            margin-bottom: 15px;
-            color: #ffeb3b;
+        /* Icône ronde */
+        .icon-circle {
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffdd00, #ff9f00);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.35);
         }
 
-        .card span.title {
-            display: block;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 10px;
+        .icon-circle .material-icons {
+            font-size: 42px;
+            color: #1a1a1a;
+        }
+
+        .title {
+            margin-top: 15px;
+            font-size: 1.1em;
+            font-weight: 600;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🎮 Plateforme de Jeux</h1>
-    <p>Clique et joue instant 🚀</p>
+    <h1>🎮 Hub de Jeux</h1>
+    <p>Des sites cool • un style moderne • clique & joue 🚀</p>
 </header>
 
 <div class="container">
 
-    <div class="card" onclick="window.open('https://www.poki.com/fr', '_blank')">
-        <span class="material-icons">sports_esports</span>
-        <span class="title">Poki</span>
+    <div class="card" onclick="window.open('https://www.poki.com/fr','_blank')">
+        <div class="icon-circle">
+            <span class="material-icons">sports_esports</span>
+        </div>
+        <div class="title">Poki</div>
     </div>
 
-    <div class="card" onclick="window.open('https://www.crazygames.com/fr', '_blank')">
-        <span class="material-icons">flash_on</span>
-        <span class="title">CrazyGames</span>
+    <div class="card" onclick="window.open('https://www.crazygames.com/fr','_blank')">
+        <div class="icon-circle">
+            <span class="material-icons">flash_on</span>
+        </div>
+        <div class="title">CrazyGames</div>
     </div>
 
-    <div class="card" onclick="window.open('https://www.miniclip.com/games/fr/', '_blank')">
-        <span class="material-icons">videogame_asset</span>
-        <span class="title">Miniclip</span>
+    <div class="card" onclick="window.open('https://www.miniclip.com/games/fr/','_blank')">
+        <div class="icon-circle">
+            <span class="material-icons">videogame_asset</span>
+        </div>
+        <div class="title">Miniclip</div>
     </div>
 
-    <div class="card" onclick="window.open('https://fr.coolmathgames.com/', '_blank')">
-        <span class="material-icons">calculate</span>
-        <span class="title">Cool Math Games</span>
+    <div class="card" onclick="window.open('https://fr.coolmathgames.com/','_blank')">
+        <div class="icon-circle">
+            <span class="material-icons">calculate</span>
+        </div>
+        <div class="title">Cool Math</div>
     </div>
 
-    <div class="card" onclick="window.open('https://www.kongregate.com/', '_blank')">
-        <span class="material-icons">public</span>
-        <span class="title">Kongregate</span>
+    <div class="card" onclick="window.open('https://www.kongregate.com/','_blank')">
+        <div class="icon-circle">
+            <span class="material-icons">public</span>
+        </div>
+        <div class="title">Kongregate</div>
     </div>
 
-    <div class="card" onclick="window.open('https://www.armorgames.com/', '_blank')">
-        <span class="material-icons">security</span>
-        <span class="title">Armor Games</span>
+    <div class="card" onclick="window.open('https://www.armorgames.com/','_blank')">
+        <div class="icon-circle">
+            <span class="material-icons">shield</span>
+        </div>
+        <div class="title">Armor Games</div>
     </div>
 
 </div>
 
 <footer>
-    <p>🔥 HTML + CSS • Design moderne • GitHub Pages</p>
+    <p>✨ Icônes rondes • Design moderne • GitHub Pages</p>
 </footer>
 
 </body>
