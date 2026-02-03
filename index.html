@@ -2,71 +2,130 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>🎮 Sites de Jeux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les meilleurs sites de jeux 🎮</title>
+
+    <!-- Icônes modernes -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
             margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0088cc;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
+            min-height: 100vh;
+        }
+
+        header {
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
-        main {
-            padding: 20px;
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
-        .game-list {
-            list-style: none;
-            padding: 0;
+
+        header p {
+            opacity: 0.9;
+            margin-top: 10px;
         }
-        .game-list li {
-            margin: 10px 0;
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
         }
-        a {
-            text-decoration: none;
-            color: #0066aa;
-            font-size: 18px;
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        a:hover {
-            color: #004477;
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
+
+        .material-icons {
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #ffeb3b;
+        }
+
+        .card span.title {
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         footer {
             text-align: center;
-            margin-top: 40px;
+            padding: 20px;
             font-size: 14px;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🎮 Mes Sites de Jeux Favoris</h1>
-    <p>Cliquer pour jouer !</p>
+    <h1>🎮 Plateforme de Jeux</h1>
+    <p>Clique et joue instant 🚀</p>
 </header>
 
-<main>
-    <ul class="game-list">
-        <li><a href="https://www.miniclip.com/games/fr/" target="_blank">Miniclip – Jeux gratuits</a></li>
-        <li><a href="https://www.crazygames.com/fr" target="_blank">CrazyGames – Jeux en ligne</a></li>
-        <li><a href="https://www.kongregate.com/" target="_blank">Kongregate – Jeux fun</a></li>
-        <li><a href="https://fr.coolmathgames.com/" target="_blank">Cool Math Games – Jeux cool</a></li>
-        <li><a href="https://www.poki.com/fr" target="_blank">Poki – Sélection de jeux</a></li>
-        <li><a href="https://www.armorgames.com/" target="_blank">Armor Games – Jeux gratuits</a></li>
-        <li><a href="https://www.addictinggames.com/" target="_blank">Addicting Games</a></li>
-        <li><a href="https://www.hoodaescape.com/" target="_blank">Hooda Escape – Jeux d’évasion</a></li>
-        <li><a href="https://www.solitaire.org/" target="_blank">Solitaire.org – Jeux classiques</a></li>
-        <li><a href="https://www.coolgames.com/" target="_blank">CoolGames – Jeux variés</a></li>
-    </ul>
-</main>
+<div class="container">
+
+    <div class="card" onclick="window.open('https://www.poki.com/fr', '_blank')">
+        <span class="material-icons">sports_esports</span>
+        <span class="title">Poki</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://www.crazygames.com/fr', '_blank')">
+        <span class="material-icons">flash_on</span>
+        <span class="title">CrazyGames</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://www.miniclip.com/games/fr/', '_blank')">
+        <span class="material-icons">videogame_asset</span>
+        <span class="title">Miniclip</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://fr.coolmathgames.com/', '_blank')">
+        <span class="material-icons">calculate</span>
+        <span class="title">Cool Math Games</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://www.kongregate.com/', '_blank')">
+        <span class="material-icons">public</span>
+        <span class="title">Kongregate</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://www.armorgames.com/', '_blank')">
+        <span class="material-icons">security</span>
+        <span class="title">Armor Games</span>
+    </div>
+
+</div>
 
 <footer>
-    <p>Page créée avec ❤️ — Amuse-toi bien !</p>
+    <p>🔥 HTML + CSS • Design moderne • GitHub Pages</p>
 </footer>
 
 </body>
 </html>
+
